@@ -18,9 +18,5 @@ kubectl get pod --all-namespaces -o jsonpath='{.items[?(@.status.hostIP=="< Node
 
 '''
 
-## work with nodes
 
-```ShellSession
-
-'''
 
