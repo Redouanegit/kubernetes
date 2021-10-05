@@ -4,11 +4,11 @@
 
 ```ShellSession
 
-# list all pods in default namespace
+# list all default namespace pods
 
 kubectl get pods -o=jsonpath='{range .items[*]}{.metadata.name}{"\n"}{end}'
 
-# list all pods with their start date and time in defaut namespace
+# list all defaut namespace pods with their start datetime 
 
 kubectl get pods -o=jsonpath='{range .items[*]}{.metadata.name}{"\t"}{.status.startTime}{"\n"}{end}'
 
