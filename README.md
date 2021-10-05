@@ -16,7 +16,6 @@ kubectl get pods -o=jsonpath='{range .items[*]}{.metadata.name}{"\t"}{.status.st
 
 kubectl get pod --all-namespaces -o jsonpath='{.items[?(@.status.hostIP=="< Node IP >")].metadata.name}'
 
-'''
 
 
 
